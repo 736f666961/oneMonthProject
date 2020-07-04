@@ -1,0 +1,129 @@
+/* Colors */
+:root{
+    --main-color: #d11a66 !important;
+}
+
+.showStories{
+    margin-top: 100px !important;
+}
+a, a:hover{
+    color: white !important;
+    text-decoration: none !important;
+}
+
+/* Main color */
+.mc{
+    color: var(--main-color);
+}
+
+/* Main font */
+.mf{
+    font-family: "Tangerine" !important;
+}
+
+/* Font size */
+.fs{
+    font-size: 41px;
+}
+
+.bg{
+    background-color: var(--main-color) !important;
+}
+
+/* story Details */
+.storyDetails{
+    width: 100%;
+    height: 40vh;
+}
+
+.storyImage{
+    width: 50%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 67vh;
+    margin: auto;
+}
+
+.storyDetailsTitle{
+    font-weight: bold;
+    font-size: 25px !important;
+}
+
+.storyDetailsBody{
+    font-size: 16px !important;
+    font-weight: 200 !important;
+}
+
+.comment-writer{
+    font-weight: 200 !important;
+    font-size: 16px !important;
+    margin-top: 6px !important;
+}
+
+@media only screen and (min-width: 1200px){
+    .storyDetailsBody{
+        margin: auto;
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .storyDetailsBody{
+        margin: auto;
+        font-size: 7vw;
+    }
+}
+
+.comments{
+    display: flex;
+    width: 100%;
+    margin-top: 15px;;
+}
+/* For comments */
+.comment-body{
+    height: 37px;
+    margin-left: 11px;
+    width: 90%;
+    /* border-radius: 5px; */
+    border: 1px solid var(--main-color);
+    padding-left: 10px !important;
+}
+
+.comment-body::placeholder{
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 200 !important;
+}
+
+.comment-body:focus{
+    color: var(--main-color) !important;
+    border: 1px solid var(--main-color) !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.show-comment{
+    margin-left: 10px;
+}
+
+.allComments .cb{
+    background-color: rgb(255, 254, 254);
+    margin-top: 10px;
+    width: 97%;
+    margin-left: 1%;
+    border: 1px solid var(--main-color) !important;
+}
+.allComments .cb .container{
+    display: flex;
+    margin: 12px auto;
+}
+
+@media screen and (max-width:900px){
+    .storyImage{
+        width: 100% !important;
+    }
+}
+.com-row{
+    margin-bottom: 20px !important;
+}

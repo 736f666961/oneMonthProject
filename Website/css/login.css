@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;500;600;700;800;900&display=swap');
+
+:root {
+    --main-color: #d11a66;
+}
+
+/* Login title */
+.login{
+    color: var(--main-color) !important;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center !important;
+}
+
+/* Inputs */
+input::placeholder{
+    color: var(--main-color) !important;
+    font-size: 20px !important;
+    font-family: "Inconsolata" !important;
+    font-weight: 200 !important;
+    padding-left: 10px !important;
+}
+/* label */
+label {
+    color: var(--main-color) !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+input{
+    box-shadow: none !important;
+    border-color: var(--main-color) !important;
+}
+
+input[type=email], input[type=password]{
+    color: var(--main-color) !important;
+    font-size: 20px !important;
+}
+
+/* Buttons */
+button[type=submit]{
+    color: var(--main-color) !important;
+    font-size: 16px !important;
+    color: white !important;
+    /* height: 44px !important; */
+    background-color: var(--main-color) !important;
+}
+
+button[type=submit]::placeholder{
+    top: -2px !important;
+}

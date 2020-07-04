@@ -1,0 +1,79 @@
+/* Colors */
+:root {
+  --main-color: #d11a66;
+}
+
+body{
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Main font */
+.mf{
+  font-weight: bold !important;
+}
+
+/* Main color */
+.mc{
+  color: var(--main-color);
+}
+
+.title{
+  font-size: 26 !important;
+  margin-bottom: 10px !important;
+}
+
+/* margin top */
+.mt-10{
+  margin-top: 10%;
+}
+
+/* font size */
+.fs{
+  font-size: 33px;
+  font-weight: 600 !important;
+}
+
+/* Card deck */
+.card-deck{
+  display: block !important;
+}
+
+/* Card Style */
+.card{
+  border: 1px solid var(--main-color) !important;
+  border-radius: 10px !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.card .card-img-top{
+  height: 220px !important;
+  border-radius: 10px !important;
+}
+
+.card-title{
+  text-align: center !important;
+  color: var(--main-color) !important;
+  /* font-size: 35px !important; */
+  font-weight: 300 !important;
+}
+
+/* Cookies Error */
+.cookies-error{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-weight: bold;
+  margin: 0px auto;
+  padding: .75rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}

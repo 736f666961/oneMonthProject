@@ -1,0 +1,82 @@
+body {
+  font-family: "Century Gothic", "Lato", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.tabs{
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  position: relative;
+  text-align: center;
+  /* -------------------------- */
+  /* position: absolute; */
+  top: 0;
+  /* ------------------------- */
+  /* position:  fixed; */
+  /* bottom: 0; */
+  /* left: 0; */
+  width: 100%;
+  /* background-color: white !important; */
+  z-index: 1 !important;
+}
+
+.tabs a {
+font-size: 0.8rem;
+margin: 0;
+text-decoration: none;
+}
+
+.tabs-container {
+display: flex;
+flex-direction: row;
+position: absolute;
+/* bottom: 0; */
+width: 100%;
+height: 70px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+background: #fff;
+/* z-index: 10; */
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: #000;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 0.8rem;
+}
+.tab:hover {
+  color: white;
+  background: rgba(102, 177, 241, 0.8);
+  transition: all 0.5s ease;
+}
+
+.user-image{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.username{
+  margin-left: 7px;
+}
+/* navbar End */
+
+#drop{
+  position: absolute !important;
+  top: 0px !important;
+  right: 0px !important;
+}

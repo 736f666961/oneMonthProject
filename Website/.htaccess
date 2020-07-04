@@ -1,0 +1,15 @@
+# Set home page 
+DirectoryIndex index.php
+
+# Disallow Directory Listing
+OPTIONS -INDEXES
+
+# Redirect To Errors Pages
+ErrorDocument 403 http://localhost/OneMonthProject/Website/Errors/403.php
+ErrorDocument 404 http://localhost/OneMonthProject/Website/Errors/404.php
+
+# BEGIN GZIP
+<ifmodule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+</ifmodule>
+# END GZIP

@@ -1,0 +1,15 @@
+@media screen and (max-width: 600px){
+    .card{
+        margin: 10px !important;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .header ul li{
+        padding: 8px !important;
+        font-weight: 600 !important;
+    }
+    .space{
+        height: 50px !important;
+    }
+}

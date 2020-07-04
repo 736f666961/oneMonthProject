@@ -1,0 +1,108 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .showStories{
+        display: block !important;
+        margin: 4px auto !important;
+        margin-top:100px !important
+    }
+    .cd {
+        width: 100% !important;
+        margin-top: 7px !important;
+    }
+
+    .cd-whole-body{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .cd-image{
+        width: 100% !important;
+    }
+
+    .cd-section2{
+        width: 100% !important;
+    }
+
+    .cd-title{
+        text-align: center !important;
+        font-size: 6vw !important;
+        width: 100% !important;
+    }
+
+    .cd-body{
+        margin: 12px !important;
+        display: block !important;
+        display: -webkit-box !important;
+        max-width: 100% !important;
+        -webkit-line-clamp: 4 !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    .read-more{
+        padding-bottom: 10px !important;
+        margin-bottom: 6px !important;
+        margin-left: 7px !important;
+        width: 97% !important;
+        font-size: 19px !important;
+        padding-top: 5px !important;
+        position: relative !important;
+    }
+}
+
+/*  For Tablets*/
+@media only screen and (min-width: 600px) and (max-width: 800px){
+    .cd {
+        height: auto !important;
+        margin-top: 7px !important;
+    }
+
+    .cd-whole-body{
+        display: block !important;
+    }
+
+    .cd-image{
+        max-width: 100% !important;
+    }
+
+    .cd-section2{
+        width: 100% !important;
+    }
+
+    .cd-title{
+        text-align: center !important;
+        font-size: 21px !important;
+    }
+
+    .cd-body{
+        margin: 12px !important;
+        display: block !important;
+        display: -webkit-box !important;
+        max-width: 100% !important;
+        -webkit-line-clamp: 4 !important;
+        -webkit-box-orient: vertical !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+    }
+
+    .read-more{
+        padding: 5px !important;
+        margin-bottom: 6px !important;
+        margin-left: 4px !important;
+        width: 97% !important;
+        font-size: 19px !important;
+        position: relative !important;
+        max-width: 100% !important;
+        font-size: 16px !important;
+    }
+}
+
+/* For Devices Larger Than Tablets like labtops */
+@media only screen and (min-width: 800px){
+    .cd-title{
+        text-align: left !important;
+        font-size: 16px !important;
+        font-weight: bold !important;
+    }
+}
