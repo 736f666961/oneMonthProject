@@ -7,12 +7,26 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+CREATE TABLE `users` (
+  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NOT NULL,
+  `firstname` varchar(255) NOT NULL,
+  `lastname` varchar(255) NOT NULL,
+  `phone` int(11) DEFAULT NULL,
+  `image` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+
 CREATE TABLE `comments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `comment_body` varchar(255) NOT NULL,
   `comment_owner_image` varchar(255) NOT NULL,
   `comment_id` int(11) NOT NULL,
   `comment_writter` varchar(255) DEFAULT NULL,
+  `comment_user_id` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `comment_id` (`comment_id`),
   CONSTRAINT `comments_ibfk_1` FOREIGN KEY (`comment_id`) REFERENCES `stories` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
@@ -28,20 +42,7 @@ CREATE TABLE `stories` (
   PRIMARY KEY (`id`),
   KEY `story_id` (`story_id`),
   CONSTRAINT `stories_ibfk_1` FOREIGN KEY (`story_id`) REFERENCES `users` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
-
-CREATE TABLE `users` (
-  `user_id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) NOT NULL,
-  `firstname` varchar(255) NOT NULL,
-  `lastname` varchar(255) NOT NULL,
-  `phone` int(11) DEFAULT NULL,
-  `image` varchar(255) NOT NULL,
-  `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  PRIMARY KEY (`user_id`),
-  UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=186 DEFAULT CHARSET=utf8mb4;
 
 
 
