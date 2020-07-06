@@ -43,7 +43,7 @@
                         <div class='col cd-section2'>
                             <h3 class='cd-title mc'>" . $row['story_title']  . "</h3>
                             <div class='cd-body mc mf'>" . $row['story_body'] . "</div>
-                            <a class='read-more-link' data-id='" . $row['id'] . "' href='../views/StoryDetailsView.php'><button class='read-more text-white bg'>Read more</button></a>
+                            <a class='read-more-link' data-id='" . $row['id'] . "' href='../views/StoryDetailsView.php?ms=" . $row['id'] . "'><button class='read-more text-white bg'>Read more</button></a>
                         </div>
                     </div>
                 </div>
@@ -54,5 +54,4 @@
 
 <script src="../js/deleteStory.js"></script>
 <script src="../js/editStory.js"></script>
-<script src="../js/storyDetails.js"></script>
 

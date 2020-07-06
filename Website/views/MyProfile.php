@@ -27,7 +27,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Stories - profile</title>
+        <title>Stories - My Profile</title>
         <link rel="stylesheet" href="../css/nav.css">
         <link rel="stylesheet" href="../css/signup.css">
         <link rel="stylesheet" href="../libs/bootstrap.min.css">

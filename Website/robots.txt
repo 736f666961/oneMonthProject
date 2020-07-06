@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /Controllers/
+Disallow: /Cookies/
+Disallow: /database/
+Disallow: /uploads/
+Disallow: /js/
+Disallow: /css/
+Disallow: /libs/
+Disallow: /views/MyProfile.php
+Allow: /views/
+Allow: /index.php
+
+# Sitemap files
+Sitemap: https://www.example.com/sitemap.xml

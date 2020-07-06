@@ -9,6 +9,18 @@
         <link rel="stylesheet" href="css/indexMedia.css">
         <link rel="stylesheet" href="./libs/bootstrap.min.css">
         <link rel="shortcut icon" href="./img/logo.png"  type="image/x-icon">
+
+        <meta name="description" content="Share your best stories for free, Any kind of stories ...">
+        <meta name="keywords" content="your, tags"/>
+        <meta name="robots" content="index,nofollow" />
+
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="Stories" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="./img/logo.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="Stories Website Logo" />
+        <meta property="og:description" content="Share your best stories for free, Any kind of stories ... " />
     </head>
     <body>
         <?php 

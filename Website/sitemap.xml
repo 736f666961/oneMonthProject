@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>/path/to/StoriesView.php</loc>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>/path/to/MyStoriesView.php</loc>
+    </url>
+
+    <url>
+        <loc>/path/to/AddStoryView.php</loc>
+    </url>
+
+    <url>
+        <loc>/path/to/StoryDetailsView.php</loc>
+    </url>
+</urlset>

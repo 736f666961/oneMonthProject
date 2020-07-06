@@ -13,8 +13,8 @@
         <link rel="stylesheet" href="../css/nav.css">
         <link rel="stylesheet" href="../css/signup.css">
         <link rel="stylesheet" href="../libs/bootstrap.min.css">
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
         <link rel="shortcut icon" href="../img/logo.png"  type="image/x-icon">
+        
     </head>
     <body>
         <!-- Start Navbar  -->

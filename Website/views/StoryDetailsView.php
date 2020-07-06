@@ -76,7 +76,7 @@
 
         <!-- Show story details -->
         <?php 
-            $id = $_SESSION['id'];
+            $id = isset($_GET['s']) ? $_GET['s'] : $_GET['ms'];
             // Get id of story
             $getId = "SELECT * FROM stories WHERE id='$id';";
             // echo $getId;
