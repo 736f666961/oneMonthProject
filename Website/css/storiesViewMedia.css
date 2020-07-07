@@ -38,6 +38,7 @@
         -webkit-box-orient: vertical !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
+        margin-left: 27px !important;
     }
 
     .read-more{
@@ -48,6 +49,8 @@
         font-size: 19px !important;
         padding-top: 5px !important;
         position: relative !important;
+        margin-left: 25px !important;
+        margin-top: 0px !important;
     }
 }
 
@@ -76,6 +79,7 @@
     }
 
     .cd-body{
+        position: relative;
         margin: 12px !important;
         display: block !important;
         display: -webkit-box !important;
@@ -84,17 +88,19 @@
         -webkit-box-orient: vertical !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
+        left: 29px !important;
     }
 
     .read-more{
-        padding: 5px !important;
+        /* padding: 5px !important; */
         margin-bottom: 6px !important;
-        margin-left: 4px !important;
-        width: 97% !important;
+        margin-left: 29px !important;
+        width: 94% !important;
         font-size: 19px !important;
         position: relative !important;
         max-width: 100% !important;
         font-size: 16px !important;
+        margin-top: 0px !important;
     }
 }
 

@@ -47,13 +47,13 @@
 
         // Check if email is not alreafy exists
         if ($connection->checkEmailExistence($safeEmail)){         
-            // echo 'Email Address is Already In Use.';
-            // $error = "<div class='alert alert-danger' role='alert'>
-            //             <strong>Error!</strong> 
-            //             <a class='alert-link'>Email already exists</a> Try again.
-            //           </div>";
+            // Email already exists error
+            $error = "<div class='alert alert-danger' role='alert'>
+                        <strong>Error!</strong> 
+                        <a class='alert-link'>Email already exists</a> Try again.
+                      </div>";
         
-            // $_SESSION['signup_errors'] = $error;
+            $_SESSION['signup_error'] = $error;
 
             // Redirect to 
             header("Location: ../views/SignupView.php");
@@ -75,16 +75,6 @@
             $_SESSION['password'] = $safePassword;
             $_SESSION['user-image'] = $safeImage;
             $_SESSION['phone-number'] = $safePhoneNumber;
-
-    // Set sessions
-    // $_SESSION['firstname'] = $_COOKIE['firstname'];
-    // $_SESSION['lastname'] = $_COOKIE['lastname'];
-    // $_SESSION['username'] = $_COOKIE['username'];
-    // $_SESSION['email'] = $_COOKIE['email'];
-    // $_SESSION['password'] = $_COOKIE['password'];
-    // $_SESSION['user-image'] = $_COOKIE['user-image'];
-    // $_SESSION['phone-number'] = $_COOKIE['phone-number'];
-    // $_SESSION['user_id'] = $_COOKIE['user_id'];
 
             // execute query aka insert data
             mysqli_query($connection->__construct(), $sql);
@@ -111,6 +101,11 @@
                         header("location: ../views/StoriesView.php");
                     }
                 }
+            }
+
+            // Remove signup error
+            if(isset($_SESSION['signup_error'])){
+                $_SESSION['signup_error'] = null;
             }
 
             // close connection

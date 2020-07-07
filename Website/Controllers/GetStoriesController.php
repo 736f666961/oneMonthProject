@@ -18,7 +18,7 @@
     $all_posts = mysqli_query($connection->__construct(), $posts);
     while ($row = mysqli_fetch_array($all_posts)) {
         // if ($row['user_id'] == $row['story_id']){
-            // echo "content ";
+            // echo "content ";<img class='user-image' src='" .  $row['image'] . "' alt='Image'>
         // }else{
             echo "
                 <div class='cd'>
@@ -31,7 +31,7 @@
                     <div class='row cd-whole-body'>
                         <div class='col'>
                             <div class='container bg-image'>
-                                <img class='cd-image' src='" . $row['story_image'] . "' alt='image'>
+                                <div class='cd-image' style='background-image:url(" . $row['story_image'] . ")'></div>
                             </div>
                         </div>
                         <div class='col cd-section2'>
@@ -48,5 +48,5 @@
 
 ?>
 
-<script src="../js/deleteStory.js"></script>
+<!-- <script src="../js/deleteStory.js"></script> -->
 <script src="../js/profileView.js"></script>

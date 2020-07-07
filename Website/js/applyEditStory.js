@@ -2,14 +2,16 @@ $(document).ready(function(){
     $("form").on("submit", function(e){
         e.preventDefault();
 
+        // Get data from user
         var storyTitle = $('#story-title');
         var storyBody = $('#story-body');
         var id = $("#eid").val();
         var img =  $("#uploaded_image").css('background-image');
         var bg = img.slice(5, -2); 
 
+        // Check if data is valid
         if (storyTitle.val().length > 0 && storyBody.val().length > 0){
-            console.log("Img: " + bg);
+            // if data is valid send a request to edit this story
             $.ajax({
                 url: "../Controllers/EditStoryController.php",
                 method: "POST",
@@ -20,9 +22,7 @@ $(document).ready(function(){
                     "EditPid": id
                 },
                 success: function(result){
-                    // window.location.reload();
-                    console.log(result);
-                    window.location.href = "../views/StoriesView.php";
+                    window.location.replace("../views/StoriesView.php");
                 }
             });
         }else{

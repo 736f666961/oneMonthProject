@@ -13,6 +13,7 @@
     // Get image name TO DELETE it in folder StoriesImages
     $img = "SELECT story_image FROM stories WHERE id='$id' LIMIT 1;";
 
+    // echo $img;
     // execute query aka get image
     $result = mysqli_query($connection->__construct(), $img) or die("Error" . $connection->__construct());
 
@@ -20,9 +21,10 @@
     while($row = mysqli_fetch_array($result)){
         // Check if that image exists on server 
         if (file_exists($row['story_image'])){
+            // echo $row['story_image'] . " exits";
             // Delete Query
-            $sql = "DELETE FROM stories WHERE id='" . $id . "';";
-
+            $sql = "DELETE FROM stories WHERE id='$id';";
+            // echo $sql;
             // execute query aka delete data
             mysqli_query($connection->__construct(), $sql) or die($connection->__construct());
 

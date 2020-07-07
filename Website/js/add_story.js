@@ -15,8 +15,8 @@ $(document).ready(function(){
                 },
                 success: function(result){
                     // e.preventDefault();
-                    console.log(result);
-                    window.location.href = "../views/StoriesView.php";
+                    // console.log(result);
+                    window.location.replace("../views/StoriesView.php");
                     // alert("");
                 }
             });

@@ -39,6 +39,11 @@
                 <div class="container col-md-8">
                     <h2 class="mc mf text-center">Signup</h2>
                     <form method="POST" action="../Controllers/SignupController.php" class="mt-4" id="signup">
+                        <?php 
+                            if(isset($_SESSION['signup_error'])){
+                                echo $_SESSION['signup_error'];
+                            }
+                        ?>
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">

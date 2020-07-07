@@ -77,6 +77,7 @@
 
             $storyInfo = mysqli_query($connection->__construct(), $story);
             while ($row = mysqli_fetch_array($storyInfo)) {
+                // echo "Story Title: " . $row['story_title'];
                 // echo $row['story_image'];
                 echo "
                 <div class='container col-md-8'>
@@ -103,7 +104,7 @@
                                     <div class='col'>
                                         <div class='form-group'>
                                             <label class='mc mf' for='fullname'>Story title</label>
-                                            <input type='text' class='form-control' name='story-title' id='story-title' placeholder='Enter title of story' value='" . $row['story_title'] . "'>
+                                            <input type='text' class='form-control' name='story-title' id='story-title' value=" . $row['story_title'] . " />
                                             
                                             <!-- Check Error title -->
                                             <span class='text-center' id='storyTitleError'></span>
@@ -115,7 +116,7 @@
                                     <div class='col'>
                                         <div class='form-group'>
                                             <label for='story-body mc mf'>Story body</label>
-                                            <textarea class='form-control' placeholder='Enter story body' name='story-body' id='story-body' cols='30' rows='4'>" . $row['story_body'] . "</textarea>
+                                            <textarea class='form-control' name='story-body' id='story-body' cols='30' rows='4'>" . $row['story_body'] . "</textarea>
                                             <!-- Check Error body -->
                                             <span class='text-center' id='storyBodyError'></span>
                                         </div>

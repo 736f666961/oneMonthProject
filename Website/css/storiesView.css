@@ -14,7 +14,7 @@ a, a:hover{
 
 /* User Image */
 .user-image{
-    border-radius: 50%;
+    border-radius: 100%;
     width: 30px;
     height: 35px;
     border: 1px solid var(--main-color) !important;
@@ -62,11 +62,23 @@ a, a:hover{
     margin-top: 6px !important;
 }
 
-/* cd Image */
-.cd-image{
+/* Backround image */
+.bg-image{
     margin: 10px auto;
     width: 100% !important;
     height: 200px !important;
+}
+/* cd Image */
+.cd-image{
+    /* margin: 10px auto;
+    width: 100% !important;
+    height: 200px !important; */
+    /* background-size: auto 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    /* margin: auto; */
+    /* background-position: 100; */
 }
 
 /* cd Title */
@@ -89,11 +101,12 @@ a, a:hover{
     display: block;
     display: -webkit-box;
     max-width: 100%;
-    -webkit-line-clamp: 8;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 12px !important;
+    font-size: 16px !important;
+    padding-right: 12px;
 }
 
 /* Part 2 of cd - card */
@@ -102,6 +115,7 @@ a, a:hover{
     flex-direction: column;
     width: 50% !important;
     margin-top: 10px !important;
+    margin-left: -20px !important;
 }
 
 /* Read more button */
@@ -112,6 +126,7 @@ a, a:hover{
     border-radius: 6px !important;
     width: 50% !important;
     font-size: 15px !important;
+    margin-top: 18px !important;
 }
 
 .read-more:focus{

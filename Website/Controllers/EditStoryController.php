@@ -4,8 +4,6 @@
     // Import Coonection file
     require_once('../database/Connection.php');
 
-
-
     // // Get data from user
     $storyTitle = $_POST["story-title"];
     $storyBody = $_POST["story-body"];
@@ -24,7 +22,7 @@
 
         // echo 'Email Address seems new !';
         $sql = "UPDATE stories SET story_title='$safeTitle', story_body='$safeBody', story_image='$safeImage' WHERE id='$id';";
-
+        
         echo $sql . "\n";
 
         // Check connection

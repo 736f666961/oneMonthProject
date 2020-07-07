@@ -36,8 +36,8 @@
                     </div>
                     <div class='row cd-whole-body'>
                         <div class='col'>
-                            <div class='container'>
-                                <img class='cd-image' src='" . $row['story_image'] . "' alt='image'>
+                            <div class='container bg-image'>
+                                <div class='cd-image' style='background-image:url(" . $row['story_image'] . ")'></div>
                             </div>
                         </div>
                         <div class='col cd-section2'>
