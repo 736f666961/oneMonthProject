@@ -30,7 +30,7 @@
                     </div>
                     <div class='row cd-whole-body'>
                         <div class='col'>
-                            <div class='container'>
+                            <div class='container bg-image'>
                                 <img class='cd-image' src='" . $row['story_image'] . "' alt='image'>
                             </div>
                         </div>
