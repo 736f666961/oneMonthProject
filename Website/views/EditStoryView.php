@@ -33,6 +33,7 @@
         <link rel="stylesheet" href="../css/addStory.css">
         <link rel="shortcut icon" href="../img/logo.png"  type="image/x-icon">
         <link rel="stylesheet" href="../libs/bootstrap.min.css">
+        <meta name="robots" content="index,nofollow" />
     </head>
     <body>
         <!-- Start Navbar  -->

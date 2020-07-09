@@ -32,6 +32,7 @@
         <link rel="stylesheet" href="../css/signup.css">
         <link rel="stylesheet" href="../libs/bootstrap.min.css">
         <link rel="shortcut icon" href="../img/logo.png"  type="image/x-icon">
+        <meta name="robots" content="index,nofollow" />
         <style>
             .btn:focus{
                 box-shadow: none !important;

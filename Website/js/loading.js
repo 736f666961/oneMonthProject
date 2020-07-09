@@ -15,6 +15,6 @@ $(document).ready(function(){
     loading();
 
     // Ajax Pulling
-    setInterval(loading, 1000);
+    // setInterval(loading, 1000);
     
 });

@@ -43,7 +43,7 @@
         $safeFirstname = mysqli_real_escape_string($connection->__construct(), $setGetData->getFirstname());
         $safeLastname = mysqli_real_escape_string($connection->__construct(), $setGetData->getLastname());
         $safePhoneNumber = mysqli_real_escape_string($connection->__construct(), $setGetData->getPhoneNumber());
-        $safeImage = isset($_COOKIE['user-image']) ? mysqli_real_escape_string($connection->__construct(), $_COOKIE['user-image']) : "../img/default/avatar.jpg";
+        $safeImage = "../img/default/avatar.jpg";
 
         // Check if email is not alreafy exists
         if ($connection->checkEmailExistence($safeEmail)){         

@@ -140,7 +140,5 @@
         </div>
 
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-        <script src="../js/uploadProfileImage.js"></script>
-        <script src="../js/validationProfile.js"></script>
     </body>
 </html>

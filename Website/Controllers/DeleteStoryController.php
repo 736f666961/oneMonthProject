@@ -30,6 +30,11 @@
 
             // Delete image
             unlink($row['story_image']);
+        }else{
+            $sql = "DELETE FROM stories WHERE id='$id';";
+            // echo $sql;
+            // execute query aka delete data
+            mysqli_query($connection->__construct(), $sql) or die($connection->__construct());
         }
     }
 

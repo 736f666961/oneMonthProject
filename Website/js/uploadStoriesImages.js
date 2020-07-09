@@ -38,8 +38,8 @@ $(document).ready(function(){
             cache: false,
             processData: false,  
             success:function(data){
-                console.log(data);
-                $("#uploaded_image").attr('class', "selected");
+                // console.log(data);
+                document.getElementById("uploaded_image").classList.add("selected");
             }
         });
     };

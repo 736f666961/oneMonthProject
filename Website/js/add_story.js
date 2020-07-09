@@ -14,7 +14,7 @@ $(document).ready(function(){
                     "story-body": storyBody.val(),
                 },
                 success: function(result){
-                    // e.preventDefault();
+                    e.preventDefault();
                     // console.log(result);
                     window.location.replace("../views/StoriesView.php");
                     // alert("");

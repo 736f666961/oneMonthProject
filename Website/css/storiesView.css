@@ -59,7 +59,7 @@ a, a:hover{
     border: 1px solid var(--main-color) !important;
     border-radius: 6px !important;
     margin-right: 2% !important;
-    margin-top: 6px !important;
+    margin-top: 16px !important;
 }
 
 /* Backround image */

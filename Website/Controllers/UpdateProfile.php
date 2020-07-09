@@ -49,9 +49,9 @@
     //         unlink($directory . "/" . basename($files[$i]));
     //     }
     // }
-
-    $sql = "UPDATE users SET firstname='$safefirstname', lastname='$safeLastname', username='$safeUsername', phone='$safePhonenumber', image='$safeImage', email='$safeEmail', password='$safePassword';";
-    // echo $sql . '\n';
+    $id = $_SESSION['user_id'];
+    $sql = "UPDATE users SET firstname='$safefirstname', lastname='$safeLastname', username='$safeUsername', phone='$safePhonenumber', image='$safeImage', email='$safeEmail', password='$safePassword' WHERE user_id='$id';";
+    echo $sql . '\n';
 
     // execute query aka insert data
     if (mysqli_query($connection->__construct(), $sql)){
@@ -62,6 +62,6 @@
     }
 
     // Redirect to anther page
-    header("Location: ../views/StoriesView.php");
+    // header("Location: ../views/StoriesView.php");
 ?>
 

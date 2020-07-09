@@ -23,7 +23,7 @@
             echo "
                 <div class='cd'>
                     <div class='container cd-header'>
-                        <a class='profile-link' data-profileID='" . $row['user_id'] . "' href='../views/ProfileView.php'>
+                        <a class='profile-link' data-profileID='" . $row['user_id'] . "' href='#'>
                             <img class='user-image' src='" .  $row['image'] . "' alt='Image'>
                             <span class='username fs text-capitalize' style='font-weight:600'>" . $row['username'] . "</span>
                         </a>

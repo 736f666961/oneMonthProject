@@ -41,6 +41,11 @@
     // execute query aka insert data
     mysqli_query($connection->__construct(), $sql) or die("Error " . mysqli_error($connection->__construct()));
 
+    $image_Added = "<div class='alert alert-success' role='alert'>
+                    Your story has been added successfully !
+                </div>";
+    $_SESSION['image_added'] = $image_Added;
+
     // Reading stories images from database
     $imgs = "SELECT story_image FROM stories;";
     $dbImages = array();

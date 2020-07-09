@@ -11,7 +11,7 @@
         <link rel="shortcut icon" href="./img/logo.png"  type="image/x-icon">
 
         <meta name="description" content="Share your best stories for free, Any kind of stories ...">
-        <meta name="keywords" content="your, tags"/>
+        <meta name="keywords" content="story, stories, share story, share stories, my story, share my story, share our story, share our stories"/>
         <meta name="robots" content="index,nofollow" />
 
         <!-- Open Graph Meta Tags -->
@@ -21,6 +21,7 @@
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:alt" content="Stories Website Logo" />
         <meta property="og:description" content="Share your best stories for free, Any kind of stories ... " />
+        <meta name="og:keywords" content="story, stories, share story, share stories, my story, share my story, share our story, share our stories"/>
     </head>
     <body>
         <?php 

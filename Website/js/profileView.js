@@ -10,18 +10,16 @@ $(document).ready(function(){
             // Get id from element above
             var profileID = $(profileLinks[i]).data("profileid");
             var altImg = $("#upload_image").val();
-             
-            // console.log(profileLinks[i]);
-            // console.log(profileID);
+
             $.ajax({
-                url: "../views/profileView.php",
+                url: "../views/ProfileView.php",
                 method: "POST",
                 data: {
                     "profileID": profileID,
                     "alt-profile-img": altImg
                 },
                 success: function(data){
-                    window.location.replace("../views/profileView.php");
+                    window.location.replace("../views/ProfileView.php");
                 }
             });
         });

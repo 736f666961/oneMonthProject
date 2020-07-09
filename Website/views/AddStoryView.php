@@ -25,6 +25,7 @@
         <link rel="stylesheet" href="../css/addStory.css">
         <link rel="shortcut icon" href="../img/logo.png"  type="image/x-icon">
         <link rel="stylesheet" href="../libs/bootstrap.min.css">
+        <meta name="robots" content="index,nofollow" />
     </head>
     <body>
         <!-- Start Navbar  -->
@@ -61,6 +62,14 @@
         <div class="container col-md-8">
             <div class="row">
                 <div class="container col-md-8">
+                <!-- <div class='alert alert-success' role='alert'>
+                    Your story has been added successfully !
+                </div> -->
+                    <?php 
+                        if (isset($_SESSION['image_added'])){
+                            echo $_SESSION['image_added'];
+                        }
+                    ?>
                     <h1 class="mc mf addStory-title">Add new story</h1>
                     <h2 class="mc mf text-center addStory-image" style="padding-bottom: 16px;">Story image</h2>
                     <form method="POST" action="" class="mt-4" id="addStory">

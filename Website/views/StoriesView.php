@@ -26,6 +26,10 @@
     
     $username = $_SESSION['username'];
 
+    if (isset($_SESSION['image_added'])){
+        $_SESSION['image_added'] = null;
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
